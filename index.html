@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>腸腰筋タイトネス ストレッチ&モビリティガイド</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-teal-50 min-h-screen font-sans">
+
+<div class="max-w-2xl mx-auto px-4 py-8">
+
+  <!-- Header -->
+  <div class="text-center mb-6">
+    <div class="text-4xl mb-2">🧘</div>
+    <h1 class="text-2xl font-bold text-teal-900">腸腰筋タイトネス</h1>
+    <h2 class="text-lg font-semibold text-teal-700">ストレッチ &amp; モビリティガイド</h2>
+    <p class="text-teal-500 text-sm mt-1">トーマステスト自己評価・段階別ストレッチ・ルーティン作成</p>
+  </div>
+
+  <!-- Tabs -->
+  <div class="flex bg-white rounded-xl shadow-sm border border-teal-100 overflow-hidden mb-6" role="tablist">
+    <button class="tab-btn flex-1 py-2.5 text-xs font-semibold text-teal-700 bg-teal-100 border-b-2 border-teal-600" data-tab="assessment" role="tab" aria-selected="true">評価</button>
+    <button class="tab-btn flex-1 py-2.5 text-xs font-semibold text-stone-500 hover:bg-stone-50" data-tab="stretches" role="tab" aria-selected="false">ストレッチ</button>
+    <button class="tab-btn flex-1 py-2.5 text-xs font-semibold text-stone-500 hover:bg-stone-50" data-tab="routine" role="tab" aria-selected="false">ルーティン</button>
+    <button class="tab-btn flex-1 py-2.5 text-xs font-semibold text-stone-500 hover:bg-stone-50" data-tab="tracking" role="tab" aria-selected="false">記録</button>
+  </div>
+
+  <!-- Assessment Tab -->
+  <div id="tab-assessment" class="tab-content">
+    <div class="bg-white rounded-xl border border-teal-100 shadow-sm p-5 mb-5">
+      <h2 class="text-sm font-bold text-teal-800 mb-4">トーマステスト 自己チェック</h2>
+
+      <div class="bg-teal-50 rounded-xl p-4 mb-4">
+        <p class="text-xs font-bold text-teal-700 mb-1">💡 トーマステストとは</p>
+        <p class="text-xs text-teal-800 leading-relaxed">股関節屈曲タイトネス（腸腰筋・大腿直筋の短縮）を評価するテストです。デスクワークで長時間座っている方に多く見られます。</p>
+      </div>
+
+      <div class="space-y-4 mb-5">
+        <div class="flex gap-3">
+          <span class="w-7 h-7 rounded-full bg-teal-500 text-white text-xs font-bold flex items-center justify-center flex-shrink-0">1</span>
+          <div>
+            <p class="text-sm font-semibold text-stone-700">ベッドや台の端に座る</p>
+            <p class="text-xs text-stone-500 mt-0.5">ベッドや診察台の端に座る。太ももが台から出るくらいの位置。</p>
+          </div>
+        </div>
+        <div class="flex gap-3">
+          <span class="w-7 h-7 rounded-full bg-teal-500 text-white text-xs font-bold flex items-center justify-center flex-shrink-0">2</span>
+          <div>
+            <p class="text-sm font-semibold text-stone-700">片膝を胸に引き寄せながら仰向けに倒れる</p>
+            <p class="text-xs text-stone-500 mt-0.5">片膝（テストしない方）を両手で抱えながら、ゆっくり仰向けに倒れる。腰が台から浮かないようにする。</p>
+          </div>
+        </div>
+        <div class="flex gap-3">
+          <span class="w-7 h-7 rounded-full bg-teal-500 text-white text-xs font-bold flex items-center justify-center flex-shrink-0">3</span>
+          <div>
+            <p class="text-sm font-semibold text-stone-700">逆の脚（テスト側）の位置を確認</p>
+            <p class="text-xs text-stone-500 mt-0.5">台から垂れ下がっている脚（テスト側）の太ももが台の水平面に対してどこにあるか確認する。</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- SVG illustration -->
+      <div class="flex justify-center mb-5">
+        <svg viewBox="0 0 220 100" class="w-56 h-24" aria-label="トーマステストの図" role="img">
+          <!-- bed -->
+          <rect x="10" y="55" width="140" height="8" fill="#d1d5db" rx="2"/>
+          <!-- body lying -->
+          <ellipse cx="45" cy="40" rx="12" ry="12" fill="#a5f3fc" stroke="#0891b2" stroke-width="2"/>
+          <line x1="45" y1="52" x2="100" y2="54" stroke="#0891b2" stroke-width="3" stroke-linecap="round"/>
+          <!-- knee up leg -->
+          <line x1="80" y1="54" x2="78" y2="38" stroke="#0891b2" stroke-width="2.5" stroke-linecap="round"/>
+          <line x1="78" y1="38" x2="58" y2="30" stroke="#0891b2" stroke-width="2.5" stroke-linecap="round"/>
+          <!-- hanging leg -->
+          <line x1="100" y1="54" x2="130" y2="54" stroke="#0891b2" stroke-width="2.5" stroke-linecap="round"/>
+          <line x1="130" y1="54" x2="140" y2="72" stroke="#0891b2" stroke-width="2.5" stroke-linecap="round"/>
+          <!-- arrows -->
+          <line x1="155" y1="54" x2="155" y2="72" stroke="#f59e0b" stroke-width="1.5" stroke-dasharray="3"/>
+          <line x1="155" y1="72" x2="152" y2="69" stroke="#f59e0b" stroke-width="1.5"/>
+          <line x1="155" y1="72" x2="158" y2="69" stroke="#f59e0b" stroke-width="1.5"/>
+          <text x="162" y="65" font-size="8" fill="#d97706">下がる</text>
+          <text x="162" y="74" font-size="8" fill="#d97706">= 陰性</text>
+        </svg>
+      </div>
+
+      <!-- Results -->
+      <h3 class="text-xs font-bold text-teal-700 mb-3">結果の判定</h3>
+      <div class="space-y-2 mb-5">
+        <div class="p-3 bg-green-50 rounded-lg border border-green-200">
+          <p class="text-xs font-bold text-green-700">陰性（正常）</p>
+          <p class="text-xs text-green-600">脚が台の水平面より下に垂れる。腸腰筋・大腿直筋の短縮なし。</p>
+        </div>
+        <div class="p-3 bg-amber-50 rounded-lg border border-amber-200">
+          <p class="text-xs font-bold text-amber-700">陽性（軽度）</p>
+          <p class="text-xs text-amber-600">脚が台とほぼ水平（下がらない）。軽度の短縮。Level 1〜2のストレッチを開始。</p>
+        </div>
+        <div class="p-3 bg-red-50 rounded-lg border border-red-200">
+          <p class="text-xs font-bold text-red-700">陽性（重度）</p>
+          <p class="text-xs text-red-600">脚が台より上に浮く。著明な短縮。Level 1から慎重に開始。理学療法士への相談も検討。</p>
+        </div>
+      </div>
+
+      <!-- Result selector -->
+      <div>
+        <p class="text-xs font-bold text-teal-700 mb-2">あなたの結果</p>
+        <div class="flex gap-2" role="group" aria-label="テスト結果選択">
+          <button class="result-btn flex-1 py-2 text-xs font-semibold rounded-lg border-2 border-green-500 bg-green-500 text-white transition-all" data-result="negative">陰性</button>
+          <button class="result-btn flex-1 py-2 text-xs font-semibold rounded-lg border-2 border-stone-200 text-stone-600 transition-all" data-result="mild">陽性（軽度）</button>
+          <button class="result-btn flex-1 py-2 text-xs font-semibold rounded-lg border-2 border-stone-200 text-stone-600 transition-all" data-result="severe">陽性（重度）</button>
+        </div>
+        <div id="result-rec" class="mt-3 p-3 bg-teal-50 rounded-lg text-xs text-teal-800"></div>
+      </div>
+    </div>
+
+    <!-- Desk tips -->
+    <div class="bg-orange-50 border border-orange-200 rounded-xl p-4">
+      <p class="text-xs font-bold text-orange-800 mb-2">🪑 座りすぎ対策のヒント</p>
+      <ul class="text-xs text-orange-900 space-y-1">
+        <li>• 1時間に1回は立ち上がり30秒以上歩く</li>
+        <li>• スタンディングデスクの活用（1時間おき）</li>
+        <li>• 椅子の高さを調整し膝が90度になるよう設定</li>
+        <li>• ランチ時に5〜10分のウォーキングを習慣化</li>
+        <li>• 電話中は立って話す習慣をつける</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Stretches Tab -->
+  <div id="tab-stretches" class="tab-content hidden">
+    <div class="flex gap-2 mb-5" role="group" aria-label="レベル選択">
+      <button class="level-btn flex-1 py-2 text-xs font-semibold rounded-lg border-2 border-teal-500 bg-teal-500 text-white transition-all" data-level="1">Level 1<br><span class="font-normal">基礎</span></button>
+      <button class="level-btn flex-1 py-2 text-xs font-semibold rounded-lg border-2 border-stone-200 text-stone-600 transition-all" data-level="2">Level 2<br><span class="font-normal">中級</span></button>
+      <button class="level-btn flex-1 py-2 text-xs font-semibold rounded-lg border-2 border-stone-200 text-stone-600 transition-all" data-level="3">Level 3<br><span class="font-normal">上級</span></button>
+    </div>
+    <div id="stretch-list" class="space-y-4"></div>
+  </div>
+
+  <!-- Routine Builder Tab -->
+  <div id="tab-routine" class="tab-content hidden">
+    <div class="bg-white rounded-xl border border-teal-100 shadow-sm p-5 mb-5">
+      <h2 class="text-sm font-bold text-teal-800 mb-2">10分ルーティンを作る</h2>
+      <p class="text-xs text-stone-500 mb-4">ストレッチを選んで自分だけのルーティンを作成します（最大6種）。</p>
+      <div id="all-stretches-selector" class="space-y-2 mb-4"></div>
+      <button id="build-routine-btn" class="w-full py-2.5 bg-teal-600 text-white rounded-lg text-sm font-semibold hover:bg-teal-700">ルーティンを生成</button>
+    </div>
+    <div id="routine-output" class="hidden bg-white rounded-xl border border-teal-100 shadow-sm p-5">
+      <h3 class="text-sm font-bold text-teal-800 mb-3">📋 本日のルーティン</h3>
+      <div id="routine-list" class="space-y-3"></div>
+      <div class="mt-4 p-3 bg-teal-50 rounded-lg">
+        <p class="text-xs text-teal-700 font-semibold" id="routine-total-time"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Tracking Tab -->
+  <div id="tab-tracking" class="tab-content hidden">
+    <div class="bg-white rounded-xl border border-teal-100 shadow-sm p-5 mb-5">
+      <h2 class="text-sm font-bold text-stone-700 mb-4">可動域スコア記録（週次）</h2>
+      <div class="mb-4">
+        <label for="angle-slider" class="text-xs font-semibold text-stone-600 block mb-2">股関節屈曲角度の推定（0〜130度）</label>
+        <div class="flex items-center gap-4">
+          <input type="range" id="angle-slider" min="0" max="130" value="90" class="flex-1 accent-teal-600" aria-label="股関節屈曲角度スライダー">
+          <span id="angle-val" class="text-lg font-bold text-teal-700 w-12 text-center">90°</span>
+        </div>
+        <div class="flex justify-between text-xs text-stone-400 px-1">
+          <span>0° (重度)</span>
+          <span>90° (中程度)</span>
+          <span>130° (正常)</span>
+        </div>
+      </div>
+      <button id="log-angle-btn" class="w-full py-2.5 bg-teal-600 text-white rounded-lg text-sm font-semibold hover:bg-teal-700">記録する</button>
+    </div>
+
+    <div class="bg-white rounded-xl border border-teal-100 shadow-sm p-5">
+      <h2 class="text-sm font-bold text-stone-700 mb-4">週次モビリティトレンド</h2>
+      <svg id="angle-chart" viewBox="0 0 400 180" class="w-full" aria-label="股関節可動域の週次グラフ" role="img">
+        <rect width="400" height="180" fill="#f0fdfa" rx="8"/>
+        <line x1="40" y1="20" x2="40" y2="145" stroke="#ccfbf1" stroke-width="1"/>
+        <line x1="40" y1="145" x2="380" y2="145" stroke="#ccfbf1" stroke-width="1"/>
+        <line x1="40" y1="20" x2="380" y2="20" stroke="#ccfbf1" stroke-width="0.5" stroke-dasharray="4"/>
+        <line x1="40" y1="62" x2="380" y2="62" stroke="#ccfbf1" stroke-width="0.5" stroke-dasharray="4"/>
+        <line x1="40" y1="104" x2="380" y2="104" stroke="#ccfbf1" stroke-width="0.5" stroke-dasharray="4"/>
+        <text x="30" y="24" font-size="9" fill="#99f6e4" text-anchor="end">130</text>
+        <text x="30" y="66" font-size="9" fill="#99f6e4" text-anchor="end">90</text>
+        <text x="30" y="108" font-size="9" fill="#99f6e4" text-anchor="end">45</text>
+        <text x="30" y="149" font-size="9" fill="#99f6e4" text-anchor="end">0</text>
+        <g id="angle-chart-data"></g>
+      </svg>
+      <div id="angle-history" class="mt-4 space-y-1"></div>
+    </div>
+  </div>
+</div>
+
+<script>
+const STRETCHES = {
+  1: [
+    {
+      id: 's1a',
+      name: "仰向けニートゥチェスト",
+      duration: "30秒 × 3セット",
+      cues: "仰向けに寝て片膝を両手で抱え胸に引き寄せる。逆の脚は床に伸ばしたまま。",
+      errors: "腰が浮かないよう注意。反動をつけない。",
+      icon: "🛌",
+      seconds: 90
+    },
+    {
+      id: 's1b',
+      name: "スタンディングランジストレッチ",
+      duration: "30秒 × 3セット",
+      cues: "片脚を大きく前に出してランジの姿勢。後ろ足のひざを床につけ、前に体重を移動して股関節前面を伸ばす。",
+      errors: "膝が内側に入らないよう注意。背筋を伸ばす。",
+      icon: "🏃",
+      seconds: 90
+    }
+  ],
+  2: [
+    {
+      id: 's2a',
+      name: "ディープランジ + 胸椎ローテーション",
+      duration: "30秒 × 3セット（各方向）",
+      cues: "ランジ姿勢からランジ側の手を天井に向けて上体を回旋させる。胸椎のモビリティも同時に高める。",
+      errors: "腰椎で回旋しないよう注意。胸椎で回すイメージで。",
+      icon: "🌀",
+      seconds: 90
+    },
+    {
+      id: 's2b',
+      name: "カウチストレッチ",
+      duration: "60秒 × 3セット",
+      cues: "片脚のかかとを壁や台に乗せてランジ姿勢を取る。腸腰筋・大腿直筋を深く伸ばす。",
+      errors: "腰を反りすぎない。体幹をニュートラルに保つ。",
+      icon: "🛋️",
+      seconds: 180
+    }
+  ],
+  3: [
+    {
+      id: 's3a',
+      name: "90/90 ヒップストレッチ",
+      duration: "60秒 × 2セット（各方向）",
+      cues: "床に座り両脚を90度の角度に曲げて置く。前後の股関節を同時にストレッチ。上体を前傾させてより深く。",
+      errors: "どちらかのお尻が浮かないよう意識。難しければ手をついてOK。",
+      icon: "🧘",
+      seconds: 120
+    },
+    {
+      id: 's3b',
+      name: "ハトのポーズ（ピジョンポーズ）",
+      duration: "60秒 × 2セット",
+      cues: "四つ這いから片膝を前に引き、逆の脚を後ろに伸ばす。上体を前に倒して股関節外旋をストレッチ。",
+      errors: "骨盤が傾かないよう注意。負担が大きければタオルを骨盤の下に置く。",
+      icon: "🕊️",
+      seconds: 120
+    }
+  ]
+};
+
+const ALL_STRETCHES = [...STRETCHES[1], ...STRETCHES[2], ...STRETCHES[3]];
+
+let currentLevel = 1;
+let selectedStretches = new Set();
+let assessmentResult = 'negative';
+
+const RESULT_RECS = {
+  negative: 'トーマステストは陰性です。予防目的でLevel 1〜2のストレッチを継続することをお勧めします。',
+  mild: '軽度の短縮が認められます。Level 1から始め、2週間後にLevel 2に進んでください。',
+  severe: '著明な短縮があります。Level 1のストレッチを毎日丁寧に行い、必要に応じて理学療法士にご相談ください。'
+};
+
+document.querySelectorAll('.result-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    assessmentResult = btn.dataset.result;
+    const colorMap = { negative: 'green', mild: 'amber', severe: 'red' };
+    document.querySelectorAll('.result-btn').forEach(b => {
+      const c = colorMap[b.dataset.result];
+      const active = b.dataset.result === assessmentResult;
+      b.className = `result-btn flex-1 py-2 text-xs font-semibold rounded-lg border-2 transition-all ${active ? `border-${c}-500 bg-${c}-500 text-white` : 'border-stone-200 text-stone-600'}`;
+    });
+    document.getElementById('result-rec').textContent = RESULT_RECS[assessmentResult];
+  });
+});
+document.getElementById('result-rec').textContent = RESULT_RECS[assessmentResult];
+
+function renderStretches() {
+  const list = document.getElementById('stretch-list');
+  list.innerHTML = '';
+  STRETCHES[currentLevel].forEach(s => {
+    const card = document.createElement('div');
+    card.className = 'bg-white rounded-xl border border-teal-100 shadow-sm p-4';
+
+    const header = document.createElement('div');
+    header.className = 'flex items-center gap-3 mb-3';
+    const iconEl = document.createElement('span');
+    iconEl.className = 'text-2xl flex-shrink-0';
+    iconEl.textContent = s.icon;
+    const info = document.createElement('div');
+    const nameEl = document.createElement('p');
+    nameEl.className = 'text-sm font-bold text-stone-800';
+    nameEl.textContent = s.name;
+    const durEl = document.createElement('p');
+    durEl.className = 'text-xs text-teal-600 font-semibold mt-0.5';
+    durEl.textContent = s.duration;
+    info.appendChild(nameEl);
+    info.appendChild(durEl);
+    header.appendChild(iconEl);
+    header.appendChild(info);
+
+    const cueBox = document.createElement('div');
+    cueBox.className = 'bg-teal-50 rounded-lg p-3 mb-2';
+    const cueLabel = document.createElement('p');
+    cueLabel.className = 'text-xs font-bold text-teal-700 mb-1';
+    cueLabel.textContent = '実施方法';
+    const cueText = document.createElement('p');
+    cueText.className = 'text-xs text-stone-600 leading-relaxed';
+    cueText.textContent = s.cues;
+    cueBox.appendChild(cueLabel);
+    cueBox.appendChild(cueText);
+
+    const errBox = document.createElement('div');
+    errBox.className = 'bg-orange-50 border border-orange-100 rounded-lg p-2 flex gap-2';
+    const errIcon = document.createElement('span');
+    errIcon.className = 'text-orange-500 text-xs flex-shrink-0';
+    errIcon.textContent = '⚠️';
+    const errText = document.createElement('span');
+    errText.className = 'text-xs text-orange-800';
+    errText.textContent = s.errors;
+    errBox.appendChild(errIcon);
+    errBox.appendChild(errText);
+
+    card.appendChild(header);
+    card.appendChild(cueBox);
+    card.appendChild(errBox);
+    list.appendChild(card);
+  });
+}
+
+document.querySelectorAll('.level-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    currentLevel = parseInt(btn.dataset.level);
+    document.querySelectorAll('.level-btn').forEach(b => {
+      const active = parseInt(b.dataset.level) === currentLevel;
+      b.className = `level-btn flex-1 py-2 text-xs font-semibold rounded-lg border-2 transition-all ${active ? 'border-teal-500 bg-teal-500 text-white' : 'border-stone-200 text-stone-600'}`;
+    });
+    renderStretches();
+  });
+});
+
+function renderRoutineSelector() {
+  const container = document.getElementById('all-stretches-selector');
+  container.innerHTML = '';
+  ALL_STRETCHES.forEach(s => {
+    const row = document.createElement('div');
+    row.className = 'flex items-center gap-3';
+    const cb = document.createElement('input');
+    cb.type = 'checkbox';
+    cb.id = `sel-${s.id}`;
+    cb.className = 'w-4 h-4 accent-teal-600 cursor-pointer flex-shrink-0';
+    cb.setAttribute('aria-label', s.name);
+    cb.checked = selectedStretches.has(s.id);
+    cb.addEventListener('change', () => {
+      if (cb.checked) {
+        if (selectedStretches.size >= 6) {
+          cb.checked = false;
+          alert('最大6種まで選択できます。');
+          return;
+        }
+        selectedStretches.add(s.id);
+      } else {
+        selectedStretches.delete(s.id);
+      }
+    });
+    const lbl = document.createElement('label');
+    lbl.setAttribute('for', `sel-${s.id}`);
+    lbl.className = 'cursor-pointer flex-1';
+    const nameEl = document.createElement('span');
+    nameEl.className = 'text-sm text-stone-700';
+    nameEl.textContent = `${s.icon} ${s.name}`;
+    const durEl = document.createElement('span');
+    durEl.className = 'text-xs text-teal-500 ml-2';
+    durEl.textContent = s.duration;
+    lbl.appendChild(nameEl);
+    lbl.appendChild(durEl);
+    row.appendChild(cb);
+    row.appendChild(lbl);
+    container.appendChild(row);
+  });
+}
+
+document.getElementById('build-routine-btn').addEventListener('click', () => {
+  if (selectedStretches.size === 0) {
+    alert('ストレッチを1つ以上選択してください。');
+    return;
+  }
+  const selected = ALL_STRETCHES.filter(s => selectedStretches.has(s.id));
+  const routineList = document.getElementById('routine-list');
+  routineList.innerHTML = '';
+  let totalSecs = 0;
+  selected.forEach((s, i) => {
+    totalSecs += s.seconds;
+    const item = document.createElement('div');
+    item.className = 'flex items-center gap-3 p-3 bg-teal-50 rounded-lg border border-teal-100';
+    const num = document.createElement('span');
+    num.className = 'w-6 h-6 rounded-full bg-teal-500 text-white text-xs font-bold flex items-center justify-center flex-shrink-0';
+    num.textContent = String(i + 1);
+    const icon = document.createElement('span');
+    icon.className = 'text-xl flex-shrink-0';
+    icon.textContent = s.icon;
+    const info = document.createElement('div');
+    info.className = 'flex-1';
+    const nameEl = document.createElement('p');
+    nameEl.className = 'text-xs font-bold text-stone-700';
+    nameEl.textContent = s.name;
+    const durEl = document.createElement('p');
+    durEl.className = 'text-xs text-teal-600';
+    durEl.textContent = s.duration;
+    info.appendChild(nameEl);
+    info.appendChild(durEl);
+    item.appendChild(num);
+    item.appendChild(icon);
+    item.appendChild(info);
+    routineList.appendChild(item);
+  });
+  const mins = Math.round(totalSecs / 60);
+  document.getElementById('routine-total-time').textContent = `合計時間の目安: 約${mins}分`;
+  document.getElementById('routine-output').classList.remove('hidden');
+});
+
+// Angle tracking
+document.getElementById('angle-slider').addEventListener('input', function() {
+  document.getElementById('angle-val').textContent = this.value + '°';
+});
+
+function getAngleLog() {
+  return JSON.parse(localStorage.getItem('hip-angle-log') || '[]');
+}
+function saveAngleLog(log) {
+  localStorage.setItem('hip-angle-log', JSON.stringify(log));
+}
+
+document.getElementById('log-angle-btn').addEventListener('click', () => {
+  const angle = parseInt(document.getElementById('angle-slider').value);
+  const today = new Date().toISOString().slice(0, 10);
+  const log = getAngleLog();
+  const idx = log.findIndex(e => e.date === today);
+  if (idx >= 0) log[idx].angle = angle;
+  else log.push({ date: today, angle });
+  if (log.length > 56) log.splice(0, log.length - 56);
+  saveAngleLog(log);
+  renderAngleChart();
+  alert('記録しました！');
+});
+
+function renderAngleChart() {
+  const log = getAngleLog();
+  const recent = log.slice(-7);
+  const g = document.getElementById('angle-chart-data');
+  g.innerHTML = '';
+
+  if (recent.length === 0) {
+    const noData = document.createElementNS('http://www.w3.org/2000/svg', 'text');
+    noData.setAttribute('x', '200'); noData.setAttribute('y', '85');
+    noData.setAttribute('text-anchor', 'middle'); noData.setAttribute('font-size', '12');
+    noData.setAttribute('fill', '#99f6e4'); noData.textContent = 'データなし';
+    g.appendChild(noData); return;
+  }
+
+  const W = 340, H = 125, PL = 40, PT = 20;
+  const stepX = recent.length > 1 ? W / (recent.length - 1) : W / 2;
+  const pts = recent.map((d, i) => ({
+    x: PL + (recent.length === 1 ? W/2 : i * stepX),
+    y: PT + H - (d.angle / 130) * H,
+    ...d
+  }));
+
+  if (pts.length > 1) {
+    const poly = document.createElementNS('http://www.w3.org/2000/svg', 'polyline');
+    poly.setAttribute('points', pts.map(p => `${p.x},${p.y}`).join(' '));
+    poly.setAttribute('fill', 'none');
+    poly.setAttribute('stroke', '#0d9488');
+    poly.setAttribute('stroke-width', '2.5');
+    g.appendChild(poly);
+  }
+
+  pts.forEach(p => {
+    const c = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+    c.setAttribute('cx', p.x); c.setAttribute('cy', p.y);
+    c.setAttribute('r', '5'); c.setAttribute('fill', '#0d9488');
+    g.appendChild(c);
+    const lbl = document.createElementNS('http://www.w3.org/2000/svg', 'text');
+    lbl.setAttribute('x', p.x); lbl.setAttribute('y', p.y - 8);
+    lbl.setAttribute('text-anchor', 'middle'); lbl.setAttribute('font-size', '9');
+    lbl.setAttribute('fill', '#0f766e'); lbl.textContent = p.angle + '°';
+    g.appendChild(lbl);
+    const dl = document.createElementNS('http://www.w3.org/2000/svg', 'text');
+    dl.setAttribute('x', p.x); dl.setAttribute('y', 162);
+    dl.setAttribute('text-anchor', 'middle'); dl.setAttribute('font-size', '8');
+    dl.setAttribute('fill', '#94a3b8'); dl.textContent = p.date.slice(5);
+    g.appendChild(dl);
+  });
+
+  const hist = document.getElementById('angle-history');
+  hist.innerHTML = '';
+  [...recent].reverse().forEach(e => {
+    const row = document.createElement('div');
+    row.className = 'flex justify-between text-xs text-stone-600 py-1 border-b border-teal-100';
+    const dateEl = document.createElement('span');
+    dateEl.textContent = e.date;
+    const aEl = document.createElement('span');
+    aEl.className = 'font-bold text-teal-700';
+    aEl.textContent = `${e.angle}°`;
+    row.appendChild(dateEl); row.appendChild(aEl);
+    hist.appendChild(row);
+  });
+}
+
+// Tabs
+document.querySelectorAll('.tab-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.tab-content').forEach(t => t.classList.add('hidden'));
+    document.querySelectorAll('.tab-btn').forEach(b => {
+      b.classList.remove('bg-teal-100', 'border-b-2', 'border-teal-600', 'text-teal-700');
+      b.classList.add('text-stone-500');
+    });
+    btn.classList.add('bg-teal-100', 'border-b-2', 'border-teal-600', 'text-teal-700');
+    btn.classList.remove('text-stone-500');
+    document.getElementById('tab-' + btn.dataset.tab).classList.remove('hidden');
+    if (btn.dataset.tab === 'tracking') renderAngleChart();
+    if (btn.dataset.tab === 'routine') renderRoutineSelector();
+  });
+});
+
+renderStretches();
+renderRoutineSelector();
+</script>
+</body>
+</html>
